@@ -1,0 +1,38 @@
+.combobox_currency_name {
+    padding-left: 6px;
+    font-size: 12px;
+}
+.combobox_option_flag{
+    margin-right: 2%;
+}
+
+
+
+
+@media only screen and (max-width: 990px) {
+    .combobox_option_flag {
+       display: none;
+    }
+    .combobox_currency_name{
+        padding-left: 2px;
+        font-size: 10px;
+    }
+    .combobox_currency {
+        font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .combobox_option_flag {
+        display: block;
+     }
+  } 
+
+  @media only screen and (max-width: 475px) {
+     /* .combobox_currency_name{
+        display: none;
+    } */
+    /* .combobox_currency {
+        padding-left: 2%;
+    }  */
+  }

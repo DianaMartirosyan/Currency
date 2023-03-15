@@ -1,0 +1,37 @@
+.country_info .first_section .country_info_first,.country_info .second_section .country_info_second {
+    margin-bottom: 5px;
+}
+.info_name {
+   font-weight: bold;
+   color: rgb(64,64,64);
+   padding-left: 10px;
+   font-size: 14px;
+}
+ .country_block,  .capital_block {
+    padding: 3px;
+    font-size: 14px;
+}
+
+.flag_block img {
+     width: 100%;
+     height: 100px;
+}
+ .country_info .first_section,.country_info .second_section{
+    width: 45%;
+    box-shadow: 2px 4px 6px 2px gray;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .country_block,  .capital_block, .info_name {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:475px) {
+    .flag_block img {
+            border-radius: 15px;
+    }
+}
+ 

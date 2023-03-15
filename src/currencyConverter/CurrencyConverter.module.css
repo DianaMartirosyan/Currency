@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_container {
+    width: 100%;
+    background-color: rgb(245,245,245);
+}
+.main_container .main_title {
+    text-align: center;
+    color: 	rgb(64,64,64);
+    padding-top: 2%;
+    font-size: 28px;
+}
+.main_container .inner_container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main_container .inner_container  .currency_converter_section, .main_container  .inner_container .info_section {
+    margin-top: 5%;
+    border-radius: 15px;
+}
+.main_container .inner_container  .info_section .info_section_title {
+     text-align: center;
+}
+.main_container .inner_container  .currency_converter_section, .main_container  .inner_container .info_section_countries {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+.main_container .inner_container  .info_section h5 {
+    color: gray;
+}
+.main_container .inner_container  .currency_converter_section{
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60%;
+    box-shadow: 0 10px 20px 0 rgb(179 187 198 / 45%);
+    padding-bottom: 80px;
+}
+.main_container  .inner_container .info_section{
+    width: 35%;
+}
+.main_container .inner_container .currency_converter_section .numeric_input{
+    margin-top: 4%;
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.main_container .currency_list_container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.main_container .currency_list_container .currency_list_section {
+    width: 60%;
+    border: 1px solid gray;
+    border-radius:15px;
+    margin-bottom: 50px;
+
+}
+.main_container .currency_list_container .currency_list_section .left_combobox {
+    width: 50%;
+}
+
+.main_container .currency_converter_section  .left_combobox, .main_container .currency_converter_section .right_combobox {
+    width: 48%;
+}
+.arrow_up_down_icon {
+    display: none;
+}
+.currencyRow_title_block {
+    width: 60%;
+}
+ .currencyRow_title {
+    text-align: center;
+    color: #000066;;
+    font-style: italic;
+}
+.inverse_block {
+    width: 60%;
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    font-weight: 600;
+}
+
+.currencyRow_main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.currency_date {
+    border-bottom: 1px solid #330000;
+    width: fit-content;
+    opacity: 0; 
+    animation: opacityOn 10s normal forwards;
+    animation-delay: 2s;
+    margin-left: 3%;
+    padding: 2px;
+}
+.currency_date div {
+    padding: 2px;
+}
+  
+  @keyframes opacityOn {
+    0% {
+        opacity: 0;
+    }
+    30%{
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+  @keyframes opacityOnAndOff {
+    0% {
+        opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media only screen and (max-width: 990px) {
+    .main_container .inner_container  .info_section .info_section_title {
+       font-size: 16px;
+    }
+    .main_container .currency_list_container .currency_list_section {
+        width: 100%;
+        border: 1px solid gray;
+        border-radius:15px;
+    
+    }
+    .currencyRow_title_block {
+        width: 100%;
+    }
+    .currencyRow_main {
+        margin: 5% auto;
+    }
+
+  }
+
+  
+@media only screen and (max-width: 768px) {
+    .main_container .inner_container  .currency_converter_section {
+        flex-direction: column;
+    }
+    .main_container .currency_converter_section  .left_combobox,
+    .main_container .currency_converter_section .right_combobox {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .arrow_up_down_icon {
+        display: block;
+        font-size: 40px;
+    }
+    .main_container .inner_container  .info_section .info_section_title {
+        font-size: 12px;
+    }
+     .main_container .currency_list_container {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width:475px) {
+    .main_container .inner_container {
+        display: block;
+    }
+    .main_container .inner_container  .currency_converter_section{
+        width: 100%;
+    }
+    .main_container  .inner_container .info_section{
+        width: 100%;
+        display: block;
+    }
+    .main_container .inner_container  .info_section_countries {
+       flex-direction: row;
+    }
+   .currency_list_container {
+        width: 100%;
+    }
+  }
